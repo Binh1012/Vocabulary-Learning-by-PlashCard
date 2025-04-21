@@ -8,7 +8,7 @@ Welcome to the Flashcard Vocabulary learning app built with [Expo](https://expo.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/flashcard-vocab.git
+   git clone https://github.com/Binh1012/Vocabulary-Learning-by-PlashCard.git
    cd flashcard-vocab
    ```
 
