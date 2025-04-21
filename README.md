@@ -27,6 +27,7 @@ You can run it on:
 - Android Emulator
 - iOS Simulator
 - Development build
+- WebStorm (Using)
 
 ---
 
@@ -54,19 +55,19 @@ app/
 
 ### 2. **Commit Message Convention**
 ```bash
-<type>: [#issueId] Nội dung rõ ràng
+<type>:  Nội dung rõ ràng
 ```
 
 **Types:** `feat`, `fix`, `refactor`, `docs`, `style`, `chore`
 
 📌 Ví dụ:
 ```bash
-feat: [#12] Add login UI and navigation
+feat: Add login UI and navigation
 ```
 
 ### 3. **Code Review & Pull Request**
 - Tạo PR từ `feature/...` → `develop`
-- Đặt tên PR: `[#issueId] Mô tả`
+- Đặt tên PR: `Mô tả`
 - Reviewer kiểm tra: rõ ràng, không bug, phạm vi đúng
 - Merge dùng **Squash & Merge** để gọn commit
 
@@ -87,7 +88,7 @@ git push
 | Câu hỏi                                          | Trả lời ngắn gọn                                                                 |
 |--------------------------------------------------|----------------------------------------------------------------------------------|
 | **What is your git branching strategy?**         | Dùng `develop` chính, các nhánh `feature/...` để phát triển, `main` để release. |
-| **How do you control commit messages?**          | Theo mẫu: `type: [#id] nội dung`, dùng `feat`, `fix`,... để dễ đọc và trace.     |
+| **How do you control commit messages?**          | Theo mẫu: `type: nội dung`, dùng `feat`, `fix`,... để dễ đọc và trace.     |
 | **How do you do code reviews and pull requests?**| PR từ `feature` → `develop`, có tên rõ ràng, reviewer check kỹ rồi squash merge.|
 | **How do you handle conflicts?**                 | Kéo `develop`, resolve conflict, commit lại và push tiếp tục PR.                 |
 
