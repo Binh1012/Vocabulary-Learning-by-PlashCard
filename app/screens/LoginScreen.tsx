@@ -12,7 +12,7 @@ export default function LoginScreen() {
             <Text style={styles.header}>Log in</Text>
             <TextInput placeholder="E-mail or username" style={styles.input} placeholderTextColor="#FF9040" />
             <TextInput placeholder="Password" secureTextEntry style={styles.input} placeholderTextColor="#FF9040" />
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => router.push('/screens/DashboardScreen')}>
                 <Text style={styles.buttonText}>LOG IN</Text>
             </TouchableOpacity>
             <Text style={styles.footer}>

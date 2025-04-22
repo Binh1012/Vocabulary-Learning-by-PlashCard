@@ -1,4 +1,3 @@
-// app/_layout.tsx
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
@@ -16,6 +15,10 @@ export default function RootLayout() {
         <Stack.Screen
             name="screens/SignUpScreen"
             options={{ title: "Sign Up", headerShown: false }}
+        />
+        <Stack.Screen
+              name="screens/DashboardScreen"
+              options={{ title: "Dashboard", headerShown: false }}
         />
       </Stack>
   );
