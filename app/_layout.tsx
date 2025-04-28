@@ -17,9 +17,25 @@ export default function RootLayout() {
             options={{ title: "Sign Up", headerShown: false }}
         />
         <Stack.Screen
-              name="screens/DashboardScreen"
-              options={{ title: "Dashboard", headerShown: false }}
+            name="screens/DashboardScreen"
+            options={{ title: "Dashboard", headerShown: false }}
         />
+        <Stack.Screen
+            name="screens/DeckDetailScreen"
+            options={{ title: "Edit Deck", headerShown: false }}
+        />
+          <Stack.Screen
+              name="screens/NewDeckScreen"
+              options={{ title: "New Deck", headerShown: false }}
+          />
+          <Stack.Screen
+              name="screens/NewCardScreen"
+              options={{ title: "New Card", headerShown: false }}
+          />
+          <Stack.Screen
+              name="screens/FlashcardScreen"
+              options={{ title: "Learn Flashcards", headerShown: false }}
+          />
       </Stack>
   );
 }

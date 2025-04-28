@@ -1,18 +1,51 @@
-// app/screens/LoginScreen.tsx
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
+import { API_URL } from '@env';
 
 export default function LoginScreen() {
     const router = useRouter();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleLogin = async () => {
+        try {
+            const response = await fetch(`${API_URL}/auth/login`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password }),
+            });
+            if (response.ok) {
+                router.push('/screens/DashboardScreen');
+            } else {
+                Alert.alert('Error', 'Invalid credentials');
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+            Alert.alert('Error', 'Failed to log in');
+        }
+    };
 
     return (
         <View style={styles.container}>
             <Text style={styles.logo}>FLASHCARD{'\n'}<Text style={{ color: '#FF9040' }}>VOCABULARY</Text></Text>
             <Text style={styles.header}>Log in</Text>
-            <TextInput placeholder="E-mail or username" style={styles.input} placeholderTextColor="#FF9040" />
-            <TextInput placeholder="Password" secureTextEntry style={styles.input} placeholderTextColor="#FF9040" />
-            <TouchableOpacity style={styles.button} onPress={() => router.push('/screens/DashboardScreen')}>
+            <TextInput
+                placeholder="E-mail or username"
+                style={styles.input}
+                placeholderTextColor="#FF9040"
+                value={email}
+                onChangeText={setEmail}
+            />
+            <TextInput
+                placeholder="Password"
+                secureTextEntry
+                style={styles.input}
+                placeholderTextColor="#FF9040"
+                value={password}
+                onChangeText={setPassword}
+            />
+            <TouchableOpacity style={styles.button} onPress={handleLogin}>
                 <Text style={styles.buttonText}>LOG IN</Text>
             </TouchableOpacity>
             <Text style={styles.footer}>

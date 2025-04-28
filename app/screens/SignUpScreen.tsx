@@ -1,20 +1,69 @@
-// app/screens/SignUpScreen.tsx
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
+import { API_URL } from '@env';
 
 export default function SignUpScreen() {
     const router = useRouter();
+    const [age, setAge] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSignUp = async () => {
+        try {
+            const response = await fetch(`${API_URL}/auth/register`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ age: parseInt(age), name, email, password }),
+            });
+            if (response.ok) {
+                router.push('/screens/LoginScreen');
+                Alert.alert('Success', 'Account created! Please log in.');
+            } else {
+                Alert.alert('Error', 'Failed to create account');
+            }
+        } catch (error) {
+            console.error('Sign up error:', error);
+            Alert.alert('Error', 'Failed to sign up');
+        }
+    };
 
     return (
         <View style={styles.container}>
             <Text style={styles.logo}>FLASHCARD{'\n'}<Text style={{ color: '#FF9040' }}>VOCABULARY</Text></Text>
             <Text style={styles.header}>Create your profile</Text>
-            <TextInput placeholder="Age" style={styles.input} placeholderTextColor="#FF9040" />
-            <TextInput placeholder="Name (optional)" style={styles.input} placeholderTextColor="#FF9040" />
-            <TextInput placeholder="E-mail or username" style={styles.input} placeholderTextColor="#FF9040" />
-            <TextInput placeholder="Password" secureTextEntry style={styles.input} placeholderTextColor="#FF9040" />
-            <TouchableOpacity style={styles.button}>
+            <TextInput
+                placeholder="Age"
+                style={styles.input}
+                placeholderTextColor="#FF9040"
+                value={age}
+                onChangeText={setAge}
+                keyboardType="numeric"
+            />
+            <TextInput
+                placeholder="Name (optional)"
+                style={styles.input}
+                placeholderTextColor="#FF9040"
+                value={name}
+                onChangeText={setName}
+            />
+            <TextInput
+                placeholder="E-mail or username"
+                style={styles.input}
+                placeholderTextColor="#FF9040"
+                value={email}
+                onChangeText={setEmail}
+            />
+            <TextInput
+                placeholder="Password"
+                secureTextEntry
+                style={styles.input}
+                placeholderTextColor="#FF9040"
+                value={password}
+                onChangeText={setPassword}
+            />
+            <TouchableOpacity style={styles.button} onPress={handleSignUp}>
                 <Text style={styles.buttonText}>SIGN UP</Text>
             </TouchableOpacity>
             <Text style={styles.footer}>

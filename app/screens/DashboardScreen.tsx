@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, TextInput, TouchableOpacity, Animated } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons';
+import {useRouter} from "expo-router";
 
 const fetchDecks = async () => {
     return [
@@ -10,24 +11,38 @@ const fetchDecks = async () => {
     ];
 };
 
+import { loadDecks, createDeck } from '../data';
+
 export default function DashboardScreen() {
     const [decks, setDecks] = useState<any[]>([]);
     const [searchText, setSearchText] = useState('');
+    const router = useRouter();
 
     useEffect(() => {
         const loadData = async () => {
-            const data = await fetchDecks();
+            const data = await loadDecks();
             setDecks(data);
         };
         loadData();
     }, []);
+
+    const handleAddDeck = async () => {
+        router.push('/screens/NewDeckScreen');
+    };
 
     const filteredDecks = decks.filter(deck =>
         deck.title.toLowerCase().includes(searchText.toLowerCase())
     );
 
     const renderItem = ({ item }: any) => (
-        <TouchableOpacity style={styles.deckCard} activeOpacity={0.8}>
+        <TouchableOpacity
+            style={styles.deckCard}
+            activeOpacity={0.8}
+            onPress={() => router.push({
+                pathname: '/screens/DeckDetailScreen',
+                params: { id: item.id, title: item.title, wordCount: item.wordCount }
+            })}
+        >
             <Text style={styles.deckTitle}>{item.title}</Text>
             <Text style={styles.deckSubTitle}>📚 {item.wordCount} từ</Text>
         </TouchableOpacity>
@@ -35,13 +50,10 @@ export default function DashboardScreen() {
 
     return (
         <View style={styles.container}>
-            {/* Top Bar */}
             <View style={styles.topBar}>
                 <Ionicons name="menu" size={28} color="#FF7F30" />
                 <Feather name="settings" size={26} color="#FF7F30" />
             </View>
-
-            {/* Search Box */}
             <View style={styles.searchContainer}>
                 <Ionicons name="search" size={20} color="#aaa" style={styles.searchIcon} />
                 <TextInput
@@ -50,17 +62,15 @@ export default function DashboardScreen() {
                     value={searchText}
                     onChangeText={setSearchText}
                     style={styles.searchInput}
-                />
+                    ></TextInput>
             </View>
-
-            {/* Deck List + Add Deck */}
             <FlatList
                 data={filteredDecks}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id}
                 contentContainerStyle={styles.deckList}
                 ListFooterComponent={
-                    <TouchableOpacity style={styles.addButton}>
+                    <TouchableOpacity style={styles.addButton} onPress={handleAddDeck}>
                         <Text style={styles.plusText}>＋ New Deck</Text>
                     </TouchableOpacity>
                 }
