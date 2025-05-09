@@ -1,58 +1,108 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, StyleProp, ViewStyle, TextStyle } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
-import { addCard } from '../apiService';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Animated, KeyboardAvoidingView, Platform } from 'react-native';
+import { useState, useRef, useEffect } from 'react';
+import { addCard } from '@/app/_services/apiService';
+import Toast from 'react-native-toast-message';
 
 const AddCardScreen = () => {
     const router = useRouter();
     const { deckId } = useLocalSearchParams();
     const [word, setWord] = useState('');
     const [meaning, setMeaning] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const fadeAnim = useRef(new Animated.Value(0)).current;
+
+    useEffect(() => {
+        Animated.timing(fadeAnim, {
+            toValue: 1,
+            duration: 800,
+            useNativeDriver: true,
+        }).start();
+    }, []);
 
     const handleCreateCard = async () => {
         if (!word.trim() || !meaning.trim()) {
-            alert('Please enter both word and meaning');
+            Toast.show({
+                type: 'error',
+                text1: 'Error',
+                text2: 'Both word and meaning are required',
+            });
             return;
         }
+
+        setIsLoading(true);
         try {
             await addCard(deckId as string, word, meaning);
+            Toast.show({
+                type: 'success',
+                text1: 'Success',
+                text2: 'Card created successfully',
+            });
             router.back();
         } catch (error) {
-            console.error('Error creating card:', error);
-            alert('Failed to create card');
+            Toast.show({
+                type: 'error',
+                text1: 'Error',
+                text2: 'Failed to create card. Please try again.',
+            });
+        } finally {
+            setIsLoading(false);
         }
     };
 
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()}>
-                    <Text style={styles.backArrow}>◄</Text>
-                </TouchableOpacity>
-                <Text style={styles.title}>New Card</Text>
-            </View>
-            <View style={styles.card}>
-                <Text style={styles.cardTitle}>Card</Text>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Từ vựng mới"
-                    placeholderTextColor="#f4a261"
-                    value={word}
-                    onChangeText={setWord}
-                />
-                <TextInput
-                    style={[styles.input, styles.meaningInput]}
-                    placeholder="Định nghĩa:"
-                    placeholderTextColor="#f4a261"
-                    value={meaning}
-                    onChangeText={setMeaning}
-                    multiline
-                />
-            </View>
-            <TouchableOpacity style={styles.createButton} onPress={handleCreateCard}>
-                <Text style={styles.createButtonText}>Create new card</Text>
-            </TouchableOpacity>
-        </View>
+        <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+            style={styles.container}
+        >
+            <Animated.View style={[styles.content, { opacity: fadeAnim }]}>
+                <View style={styles.header}>
+                    <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                        <Text style={styles.backButtonText}>Cancel</Text>
+                    </TouchableOpacity>
+                    <Text style={styles.title}>Add New Card</Text>
+                    <TouchableOpacity
+                        onPress={handleCreateCard}
+                        style={[styles.createButton, (!word.trim() || !meaning.trim() || isLoading) && styles.createButtonDisabled]}
+                        disabled={!word.trim() || !meaning.trim() || isLoading}
+                    >
+                        <Text style={styles.createButtonText}>
+                            {isLoading ? 'Creating...' : 'Create'}
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style={styles.form}>
+                    <View style={styles.inputGroup}>
+                        <Text style={styles.label}>Word</Text>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Enter word"
+                            placeholderTextColor="#ed903b"
+                            value={word}
+                            onChangeText={setWord}
+                            autoFocus
+                            editable={!isLoading}
+                        />
+                    </View>
+
+                    <View style={styles.inputGroup}>
+                        <Text style={styles.label}>Meaning</Text>
+                        <TextInput
+                            style={[styles.input, styles.meaningInput]}
+                            placeholder="Enter meaning"
+                            placeholderTextColor="#ed903b"
+                            value={meaning}
+                            onChangeText={setMeaning}
+                            multiline
+                            numberOfLines={4}
+                            textAlignVertical="top"
+                            editable={!isLoading}
+                        />
+                    </View>
+                </View>
+            </Animated.View>
+        </KeyboardAvoidingView>
     );
 };
 
@@ -60,61 +110,75 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fcf4e5',
-        padding: 20,
-    } as ViewStyle,
+    },
+    content: {
+        flex: 1,
+    },
     header: {
         flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 20,
-    } as ViewStyle,
-    backArrow: {
-        fontSize: 30,
-        color: '#f4a261',
-        marginRight: 10,
-    } as TextStyle,
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: '#f4a261',
-    } as TextStyle,
-    card: {
-        backgroundColor: '#b8e1f5',
-        padding: 20,
-        borderRadius: 10,
-        borderWidth: 2,
-        borderColor: '#f4a261',
-        marginBottom: 20,
-    } as ViewStyle,
-    cardTitle: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: '#000',
-        marginBottom: 10,
-    } as TextStyle,
-    input: {
+        paddingHorizontal: 20,
+        paddingTop: 60,
+        paddingBottom: 20,
         backgroundColor: '#fff',
-        borderRadius: 5,
-        padding: 10,
-        marginBottom: 10,
-        fontSize: 16,
-        color: '#000',
+        borderBottomWidth: 1,
+        borderBottomColor: '#eee',
     },
-    meaningInput: {
-        height: 100,
-        textAlignVertical: 'top',
+    backButton: {
+        padding: 8,
+    },
+    backButtonText: {
+        color: '#ff884d',
+        fontSize: 16,
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#72b3f0',
     },
     createButton: {
-        backgroundColor: '#2a9d8f',
-        paddingVertical: 12,
-        paddingHorizontal: 30,
-        borderRadius: 10,
-        alignItems: 'center',
-    } as ViewStyle,
+        backgroundColor: '#ff884d',
+        paddingHorizontal: 15,
+        paddingVertical: 8,
+        borderRadius: 20,
+    },
+    createButtonDisabled: {
+        backgroundColor: '#ffb38a',
+        opacity: 0.7,
+    },
     createButtonText: {
         color: '#fff',
         fontSize: 16,
         fontWeight: 'bold',
-    } as TextStyle,
+    },
+    form: {
+        padding: 20,
+    },
+    inputGroup: {
+        marginBottom: 20,
+    },
+    label: {
+        fontSize: 16,
+        color: '#72b3f0',
+        marginBottom: 10,
+    },
+    input: {
+        backgroundColor: '#b8e1f5',
+        borderRadius: 15,
+        padding: 15,
+        fontSize: 16,
+        color: '#ed903b',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 3,
+        elevation: 3,
+    },
+    meaningInput: {
+        height: 120,
+        paddingTop: 15,
+    },
 });
 
 export default AddCardScreen;

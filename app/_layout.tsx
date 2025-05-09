@@ -1,9 +1,18 @@
+import 'react-native-gesture-handler';
+import 'react-native-reanimated';
 import { Stack } from 'expo-router';
+import { AuthProvider } from './_contexts/AuthContext';
+import Toast from 'react-native-toast-message';
 
-export default function RootLayout() {
+export default function Layout() {
     return (
-        <Stack screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="index" />
-        </Stack>
+        <AuthProvider>
+            <Stack
+                screenOptions={{
+                    headerShown: false,
+                }}
+            />
+            <Toast />
+        </AuthProvider>
     );
 }

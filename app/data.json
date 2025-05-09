@@ -1,0 +1,21 @@
+{
+  "users": {
+    "<user-uid>": {
+      "decks": {
+        "<deck-id>": {
+          "title": "Deck Name",
+          "userId": "<user-uid>",
+          "createdAt": 16987654321,
+          "cards": {
+            "<card-id>": {
+              "word": "Hello",
+              "meaning": "Xin chào",
+              "userId": "<user-uid>",
+              "createdAt": 16987654321
+            }
+          }
+        }
+      }
+    }
+  }
+}

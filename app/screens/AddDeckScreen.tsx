@@ -1,78 +1,163 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, StyleProp, ViewStyle, TextStyle } from 'react-native';
 import { useRouter } from 'expo-router';
-import { addDeck } from '../apiService';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Animated, KeyboardAvoidingView, Platform } from 'react-native';
+import { useState, useRef, useEffect } from 'react';
+import { addDeck } from '@/app/_services/apiService';
+import Toast from 'react-native-toast-message';
 
 const AddDeckScreen = () => {
     const router = useRouter();
-    const [deckName, setDeckName] = useState('');
+    const [title, setTitle] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const fadeAnim = useRef(new Animated.Value(0)).current;
+
+    useEffect(() => {
+        Animated.timing(fadeAnim, {
+            toValue: 1,
+            duration: 800,
+            useNativeDriver: true,
+        }).start();
+    }, []);
 
     const handleCreateDeck = async () => {
-        if (!deckName.trim()) {
-            alert('Please enter a deck name');
+        if (!title.trim()) {
+            Toast.show({
+                type: 'error',
+                text1: 'Error',
+                text2: 'Deck title is required',
+            });
             return;
         }
+
+        setIsLoading(true);
         try {
-            await addDeck(deckName);
+            await addDeck(title);
+            Toast.show({
+                type: 'success',
+                text1: 'Success',
+                text2: 'Deck created successfully',
+            });
             router.back();
         } catch (error) {
-            console.error('Error creating deck:', error);
-            alert('Failed to create deck');
+            Toast.show({
+                type: 'error',
+                text1: 'Error',
+                text2: 'Failed to create deck. Please try again.',
+            });
+        } finally {
+            setIsLoading(false);
         }
     };
 
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>NEW DECK</Text>
-            <TextInput
-                style={styles.input}
-                placeholder="Name of deck"
-                placeholderTextColor="#f4a261"
-                value={deckName}
-                onChangeText={setDeckName}
-            />
-            <TouchableOpacity style={styles.createButton} onPress={handleCreateDeck}>
-                <Text style={styles.createButtonText}>Create new deck</Text>
-            </TouchableOpacity>
-        </View>
+        <KeyboardAvoidingView
+            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+            style={styles.container}
+        >
+            <Animated.View style={[styles.content, { opacity: fadeAnim }]}>
+                <View style={styles.header}>
+                    <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                        <Text style={styles.backButtonText}>Cancel</Text>
+                    </TouchableOpacity>
+                    <Text style={styles.title}>Add New Deck</Text>
+                    <TouchableOpacity
+                        onPress={handleCreateDeck}
+                        style={[styles.createButton, (!title.trim() || isLoading) && styles.createButtonDisabled]}
+                        disabled={!title.trim() || isLoading}
+                    >
+                        <Text style={styles.createButtonText}>
+                            {isLoading ? 'Creating...' : 'Create'}
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View style={styles.form}>
+                    <View style={styles.inputGroup}>
+                        <Text style={styles.label}>Deck Title</Text>
+                        <TextInput
+                            style={styles.input}
+                            placeholder="Enter deck title"
+                            placeholderTextColor="#ed903b"
+                            value={title}
+                            onChangeText={setTitle}
+                            autoFocus
+                            editable={!isLoading}
+                        />
+                    </View>
+                </View>
+            </Animated.View>
+        </KeyboardAvoidingView>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#b8e1f5',
-        padding: 20,
-        justifyContent: 'center',
-        alignItems: 'center',
-    } as ViewStyle,
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: '#000',
-        marginBottom: 20,
-    } as TextStyle,
-    input: {
-        width: 100,
         backgroundColor: '#fcf4e5',
-        borderRadius: 10,
-        paddingVertical: 12,
-        paddingHorizontal: 15,
-        marginBottom: 20,
+    },
+    content: {
+        flex: 1,
+    },
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 20,
+        paddingTop: 60,
+        paddingBottom: 20,
+        backgroundColor: '#fff',
+        borderBottomWidth: 1,
+        borderBottomColor: '#eee',
+    },
+    backButton: {
+        padding: 8,
+    },
+    backButtonText: {
+        color: '#ff884d',
         fontSize: 16,
-        color: '#000',
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#72b3f0',
     },
     createButton: {
-        backgroundColor: '#f4a261',
-        paddingVertical: 12,
-        paddingHorizontal: 30,
-        borderRadius: 10,
-    } as ViewStyle,
+        backgroundColor: '#ff884d',
+        paddingHorizontal: 15,
+        paddingVertical: 8,
+        borderRadius: 20,
+    },
+    createButtonDisabled: {
+        backgroundColor: '#ffb38a',
+        opacity: 0.7,
+    },
     createButtonText: {
         color: '#fff',
         fontSize: 16,
         fontWeight: 'bold',
-    } as TextStyle,
+    },
+    form: {
+        padding: 20,
+    },
+    inputGroup: {
+        marginBottom: 20,
+    },
+    label: {
+        fontSize: 16,
+        color: '#72b3f0',
+        marginBottom: 10,
+    },
+    input: {
+        backgroundColor: '#b8e1f5',
+        borderRadius: 15,
+        padding: 15,
+        fontSize: 16,
+        color: '#ed903b',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.1,
+        shadowRadius: 3,
+        elevation: 3,
+    },
 });
 
 export default AddDeckScreen;

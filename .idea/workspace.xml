@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf8b258e-fdea-44ad-9b5a-0af3f0f7d808" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/_services/apiService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/deck_card.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apiService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/firebaseConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/AddCardScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/AddCardScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/AddDeckScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/AddDeckScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/FlashcardScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/FlashcardScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/HomeScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/LoginScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/LoginScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/SignUpScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/SignUpScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/StartScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/StartScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/VocabularyListScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/VocabularyListScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/_layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/esm/index.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/esm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/index.cjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/react/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/react/esm/index.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/react/esm/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/react/index.cjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/react/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect-generated/js/default-connector/react/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect/connector/connector.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect/connector/mutations.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect/connector/queries.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect/dataconnect.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconnect/schema/schema.gql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lyhoquy&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Binh1012/Vocabulary-Learning-by-PlashCard.git&quot;,
+    &quot;accountId&quot;: &quot;3227cfa1-73ba-4b44-abe2-a352e818138d&quot;
+  }
+}</component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2wqAQRo8Dxt9ReU0OxzlP26JyuX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/DUT/React/FlashcardVocabulary/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "D:\\DUT\\React\\FlashcardVocabulary\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DUT\React\FlashcardVocabulary\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DUT\React\FlashcardVocabulary\app\services" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf8b258e-fdea-44ad-9b5a-0af3f0f7d808" name="Changes" comment="" />
+      <created>1746758714604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746758714604</updated>
+      <workItem from="1746758716375" duration="4465000" />
+      <workItem from="1746770096573" duration="2106000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
