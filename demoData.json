@@ -1,0 +1,31 @@
+{
+  "decks": {
+    "deck123": {
+      "title": "Basic Korean",
+      "userId": "user123",
+      "createdAt": 1715680000000,
+      "cardIds": {
+        "card001": true,
+        "card002": true
+      }
+    }
+  },
+  "cards": {
+    "card001": {
+      "word": "안녕하세요",
+      "meaning": "Hello",
+      "partOfSpeech": "greeting",
+      "examples": ["안녕하세요! 만나서 반갑습니다."],
+      "userId": "user123",
+      "createdAt": 1715680000000,
+      "score": 0
+    }
+  },
+  "users": {
+    "user123": {
+      "decks": {
+        "deck123": true
+      }
+    }
+  }
+}
