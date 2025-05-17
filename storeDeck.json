@@ -1,0 +1,1996 @@
+{
+  "toeic-200": {
+    "title": "TOEIC 200 Vocabulary 2023 Q4",
+    "description": "Comprehensive vocabulary list for TOEIC test preparation, including parts of speech and example sentences.",
+    "imageKey": "business",
+    "cards": {
+      "card1": {
+        "word": "service",
+        "meaning": "dịch vụ, sự phục vụ, bảo trì và sửa chữa (sau bán hàng)",
+        "partOfSpeech": "noun",
+        "examples": [
+          "This service is free to sb.",
+          "After 5 years of service as CEO.",
+          "Provide a much-needed service to sb."
+        ]
+      },
+      "card2": {
+        "word": "order",
+        "meaning": "đặt hàng, đơn hàng, trình tự, chỉ thị, mệnh lệnh",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Order office supplies from...",
+          "Place an order.",
+          "The order should be placed by midnight."
+        ]
+      },
+      "card3": {
+        "word": "provide",
+        "meaning": "cung cấp",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Provide free installation for...",
+          "Provide the details of your job responsibilities.",
+          "Provide excellent services to customers."
+        ]
+      },
+      "card4": {
+        "word": "offer",
+        "meaning": "cung cấp, đề nghị, đề xuất",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Offer customer free shipping.",
+          "Offer a 10 percent discount to sb.",
+          "Take advantage of this offer."
+        ]
+      },
+      "card5": {
+        "word": "complete",
+        "meaning": "hoàn thiện, hoàn tất",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Complete the training course on...",
+          "Must be completed by + time.",
+          "After the process is complete."
+        ]
+      },
+      "card6": {
+        "word": "report",
+        "meaning": "bản báo cáo",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Submit a progress report.",
+          "Report numerous manufacturing problems.",
+          "Write a brief report on..."
+        ]
+      },
+      "card7": {
+        "word": "last",
+        "meaning": "tiếp tục, kéo dài",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Last longer than those made by competitors.",
+          "Last until May.",
+          "Leave a lasting impression on sb."
+        ]
+      },
+      "card8": {
+        "word": "schedule",
+        "meaning": "lịch trình",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Arrive on schedule.",
+          "Schedule the next training workshop.",
+          "Be scheduled to depart every 5 minutes."
+        ]
+      },
+      "card9": {
+        "word": "following",
+        "meaning": "sau, tiếp theo",
+        "partOfSpeech": "preposition",
+        "examples": [
+          "Following the upgrade.",
+          "Following the tour of the local plant.",
+          "Until the following business day."
+        ]
+      },
+      "card10": {
+        "word": "position",
+        "meaning": "vị trí, tình hình, hoàn cảnh, lập trường, ý kiến",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Hold a position for three years.",
+          "Secure the top position.",
+          "A marketing position."
+        ]
+      },
+      "card11": {
+        "word": "require",
+        "meaning": "yêu cầu",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be required to submit receipts.",
+          "Registration is required for sb.",
+          "Be required on the registration form."
+        ]
+      },
+      "card12": {
+        "word": "request",
+        "meaning": "yêu cầu, đòi hỏi, đề nghị",
+        "partOfSpeech": "noun",
+        "examples": [
+          "At one's request.",
+          "Make a request.",
+          "To request items for the event."
+        ]
+      },
+      "card13": {
+        "word": "open",
+        "meaning": "mở, mở ra",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Open its third branch office.",
+          "Be open to the public.",
+          "Job opening."
+        ]
+      },
+      "card14": {
+        "word": "review",
+        "meaning": "đánh giá, xem xét",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Review the enclosed instructions.",
+          "Review the company newsletter.",
+          "Receive positive review from sb."
+        ]
+      },
+      "card15": {
+        "word": "increase",
+        "meaning": "tăng lên, nhân lên, lớn thêm",
+        "partOfSpeech": "verb",
+        "examples": [
+          "A significant increase in sales.",
+          "Due to an increase in the demand for...",
+          "Increase the rate of production."
+        ]
+      },
+      "card16": {
+        "word": "available",
+        "meaning": "có sẵn, có thể tìm được (đồ vật); rảnh, có thời gian (người)",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be available to work on weekends.",
+          "Be available beginning next week.",
+          "As soon as be available."
+        ]
+      },
+      "card17": {
+        "word": "need",
+        "meaning": "cần, yêu cầu",
+        "partOfSpeech": "verb",
+        "examples": [
+          "There is a need for...",
+          "Due to the increasing need for...",
+          "Meet the needs of..."
+        ]
+      },
+      "card18": {
+        "word": "local",
+        "meaning": "(tính) địa phương, (thuộc về) bản địa",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Use grains only from local farms.",
+          "Be essential to the local economy.",
+          "Complaints from local residents."
+        ]
+      },
+      "card19": {
+        "word": "conference",
+        "meaning": "cuộc họp, hội nghị",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Attend conferences regularly.",
+          "At the press conference.",
+          "Cancel the conference due to bad weather."
+        ]
+      },
+      "card20": {
+        "word": "submit",
+        "meaning": "nộp, đề xuất",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Submit the shift schedule.",
+          "Submit an application to sb.",
+          "Submit a work report by Friday."
+        ]
+      },
+      "card21": {
+        "word": "use",
+        "meaning": "sử dụng",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Survey techniques used in the marketing industry.",
+          "Use caution.",
+          "Be available for use by sb."
+        ]
+      },
+      "card22": {
+        "word": "place",
+        "meaning": "đặt, để, bố trí, nơi chốn, địa điểm, vị trí",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Place an advertisement in the newspaper.",
+          "Place an order.",
+          "Arrive at the construction site."
+        ]
+      },
+      "card23": {
+        "word": "include",
+        "meaning": "bao gồm, chứa đựng",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Include A in B.",
+          "Include one's account number.",
+          "Include A in/on/with."
+        ]
+      },
+      "card24": {
+        "word": "recent",
+        "meaning": "gần đây, mới đây, mới xảy ra",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "The recent merger of A and B.",
+          "The most recent addition to...",
+          "Recent market trends."
+        ]
+      },
+      "card25": {
+        "word": "return",
+        "meaning": "hoán đổi, trở về, hoàn lại (hàng hóa, khoản thu nhập, tiền lời)",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Return A to B.",
+          "Be returned immediately.",
+          "The merchandise return policy."
+        ]
+      },
+      "card26": {
+        "word": "purchase",
+        "meaning": "sản phẩm mua được, vật đã mua, việc mua sắm",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Thank you for your recent purchase of...",
+          "Offer free delivery for all purchases.",
+          "Purchase drinks from the convenience store."
+        ]
+      },
+      "card27": {
+        "word": "construction",
+        "meaning": "công trình (xây dựng)",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Begin construction of the new city hall building.",
+          "Plan the construction of a new stadium.",
+          "The construction of a new parking lot."
+        ]
+      },
+      "card28": {
+        "word": "due",
+        "meaning": "đến kỳ, đến hạn, phải trả",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be due two weeks from the checkout date.",
+          "Due to a scheduled fire safety inspection.",
+          "Due to increased product demand."
+        ]
+      },
+      "card29": {
+        "word": "approve",
+        "meaning": "phê duyệt, công nhận",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Approve one's promotion.",
+          "Approve a building plan.",
+          "Be stored in approved containers."
+        ]
+      },
+      "card30": {
+        "word": "take",
+        "meaning": "cần bao lâu, mang theo/dẫn (đặt theo), đi (phương tiện giao thông)",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Take A with sb.",
+          "Take over as the new CEO.",
+          "Will take place next Friday."
+        ]
+      },
+      "card31": {
+        "word": "subject",
+        "meaning": "dễ dàng, lệ thuộc, chịu ảnh hưởng",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be subject to additional charges.",
+          "Be subject to seasonal demand.",
+          "Be subject to change without notice."
+        ]
+      },
+      "card32": {
+        "word": "client",
+        "meaning": "khách hàng (của một sản phẩm dịch vụ)",
+        "partOfSpeech": "noun",
+        "examples": [
+          "One of our most important clients.",
+          "A potential client.",
+          "Receive high ratings for client satisfaction."
+        ]
+      },
+      "card33": {
+        "word": "process",
+        "meaning": "quy trình, công đoạn",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Questions about the recycling process.",
+          "Check the manufacturing process for efficiency.",
+          "Process your online order."
+        ]
+      },
+      "card34": {
+        "word": "announce",
+        "meaning": "phát biểu, cho biết, công bố",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Announce the sales figures for December.",
+          "Announce the appointment of...",
+          "Announce that..."
+        ]
+      },
+      "card35": {
+        "word": "award",
+        "meaning": "trao tặng, trao giải",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be awarded a contract by...",
+          "Receive an award for...",
+          "Win the Best Employee of the Year award."
+        ]
+      },
+      "card36": {
+        "word": "soon",
+        "meaning": "ngay lập tức, sớm muốn, lát nữa",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Will be joining us soon.",
+          "Be expected to rise soon.",
+          "As soon as Ms. Glenn returns from the trip."
+        ]
+      },
+      "card37": {
+        "word": "designed",
+        "meaning": "được phát minh, được thiết kế, có ý định",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be designed specifically for...",
+          "Devices designed to...",
+          "Be designed to be more energy-efficient."
+        ]
+      },
+      "card38": {
+        "word": "hold",
+        "meaning": "mở ra, đăng cai, tổ chức (sự kiện)",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Hold a feedback meeting.",
+          "A reception party will be held tomorrow evening.",
+          "Be held in the main conference room."
+        ]
+      },
+      "card39": {
+        "word": "several",
+        "meaning": "vài, một vài, một số",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Listen to several suggestions.",
+          "Be delayed by several days.",
+          "Several of our employment policies."
+        ]
+      },
+      "card40": {
+        "word": "experience",
+        "meaning": "kinh nghiệm, trải nghiệm",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Experienced hikers.",
+          "Have a good experience with the company.",
+          "No previous experience is required."
+        ]
+      },
+      "card41": {
+        "word": "article",
+        "meaning": "bài viết, bài báo",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Write an article for the company newsletter.",
+          "A short article related to local tourism activities.",
+          "Thank you for submitting your article."
+        ]
+      },
+      "card42": {
+        "word": "cost",
+        "meaning": "giá cả, chi phí",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Given increasing fuel cost.",
+          "To reduce (operating) costs.",
+          "The cost of proposed construction."
+        ]
+      },
+      "card43": {
+        "word": "recently",
+        "meaning": "gần đây, mới đây",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Has recently been updated.",
+          "Has recently been awarded a contract.",
+          "Recently announced that..."
+        ]
+      },
+      "card44": {
+        "word": "ship",
+        "meaning": "vận chuyển, giao hàng, chuyên chở",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be shipped within 24 hours.",
+          "Once your order has been shipped."
+        ]
+      },
+      "card45": {
+        "word": "account",
+        "meaning": "hạng mục, tài khoản, khách hàng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Account for the decrease in...",
+          "Accounts to manage.",
+          "On account of..."
+        ]
+      },
+      "card46": {
+        "word": "delivery",
+        "meaning": "sự vận chuyển, sự phân phối, sự giao hàng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Allow three days for delivery.",
+          "Await delivery of...",
+          "Guarantee same-day delivery."
+        ]
+      },
+      "card47": {
+        "word": "ensure",
+        "meaning": "đảm bảo, chắc chắn",
+        "partOfSpeech": "verb",
+        "examples": [
+          "In an effort to ensure accuracy.",
+          "Ensure timely delivery.",
+          "Please ensure that all labels are printed correctly."
+        ]
+      },
+      "card48": {
+        "word": "support",
+        "meaning": "sự ủng hộ, sự giúp đỡ, sự hỗ trợ",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Thanks to your continued support.",
+          "Call for technical support.",
+          "Support an after-school program for children."
+        ]
+      },
+      "card49": {
+        "word": "expect",
+        "meaning": "mong đợi, dự đoán, cho rằng",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Expect some problems with...",
+          "Be expected to increase sharply.",
+          "Surpass one's expectations."
+        ]
+      },
+      "card50": {
+        "word": "equipment",
+        "meaning": "thiết bị, dụng cụ, đồ dùng cần thiết",
+        "partOfSpeech": "noun",
+        "examples": [
+          "An inventory of the electronic equipment.",
+          "Safety equipment.",
+          "Be equipped with..."
+        ]
+      },
+      "card51": {
+        "word": "attend",
+        "meaning": "tham dự, có mặt",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Attend tomorrow's meeting.",
+          "Sign up to attend the workshop.",
+          "Be invited to attend a dinner reception."
+        ]
+      },
+      "card52": {
+        "word": "material",
+        "meaning": "nguyên liệu, chất liệu, tư liệu",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Highest-quality materials.",
+          "Buy raw materials.",
+          "Be made using recycled materials."
+        ]
+      },
+      "card53": {
+        "word": "meet",
+        "meaning": "gặp gỡ, đáp ứng, làm thỏa mãn",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Meet with sb.",
+          "Meet the investors' expectations.",
+          "Meet the deadline."
+        ]
+      },
+      "card54": {
+        "word": "resource",
+        "meaning": "tài nguyên, nguồn lợi",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The human resources department.",
+          "A sufficient supply of natural resources.",
+          "Be an invaluable resource for..."
+        ]
+      },
+      "card55": {
+        "word": "policy",
+        "meaning": "trong trách, điều khoản, chính sách",
+        "partOfSpeech": "noun",
+        "examples": [
+          "To remind you of a few policies.",
+          "Update the company policy relating to...",
+          "An insurance policy."
+        ]
+      },
+      "card56": {
+        "word": "performance",
+        "meaning": "thành tích, sự biểu diễn, tính năng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Positive sales performance.",
+          "The performance of a new printer.",
+          "Outstanding performance."
+        ]
+      },
+      "card57": {
+        "word": "inform",
+        "meaning": "thông báo, cho biết, bảo tin cho, truyền thông tin cho",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Inform sb that...",
+          "Inform sb of A.",
+          "For more information about..."
+        ]
+      },
+      "card58": {
+        "word": "addition",
+        "meaning": "sự bổ sung, sự thêm vào (nhân viên, quân số)",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The addition of a new dish to the special menu.",
+          "A welcome addition to...",
+          "In addition..."
+        ]
+      },
+      "card59": {
+        "word": "contract",
+        "meaning": "hợp đồng, sự giao kèo, giấy ký kết",
+        "partOfSpeech": "noun",
+        "examples": [
+          "A copy of the sales contract.",
+          "Sign a contract.",
+          "According to the terms of the contract."
+        ]
+      },
+      "card60": {
+        "word": "locate",
+        "meaning": "xác định vị trí, định vị; nằm ở, có trụ sở ở",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Locate a nearby restaurant.",
+          "The entrance to the parking garage is located on the east side of the building.",
+          "His office is located in the northern part of the city."
+        ]
+      },
+      "card61": {
+        "word": "once",
+        "meaning": "một lần, trước đó, ngay khi, vừa mới",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Have been to Beijing once.",
+          "Be published once a month.",
+          "Once we introduce new menus."
+        ]
+      },
+      "card62": {
+        "word": "apply",
+        "meaning": "ứng tuyển, đăng ký, áp dụng",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Apply for a position.",
+          "Apply different ideas to the new marketing strategy.",
+          "Apply sunscreen to the face."
+        ]
+      },
+      "card63": {
+        "word": "location",
+        "meaning": "vị trí, địa điểm, cơ quan",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Retail locations.",
+          "Open a new location in New York.",
+          "Often travel to overseas locations."
+        ]
+      },
+      "card64": {
+        "word": "market",
+        "meaning": "tiếp thị, chợ, thị trường",
+        "partOfSpeech": "noun",
+        "examples": [
+          "A strong market for...",
+          "Stay on the market.",
+          "Launch a new marketing campaign."
+        ]
+      },
+      "card65": {
+        "word": "early",
+        "meaning": "sớm, nhanh chóng",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Come to work early.",
+          "Renew one's subscriptions early.",
+          "An improvement on the early version."
+        ]
+      },
+      "card66": {
+        "word": "forward",
+        "meaning": "ở phía trước, tiến về phía trước",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Move forward with expansion plans.",
+          "Forward product inquiries to the sales department.",
+          "Look forward to V-ing."
+        ]
+      },
+      "card67": {
+        "word": "part",
+        "meaning": "phần, linh kiện, bộ phận",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Order engine parts.",
+          "As part of the new policy.",
+          "Take part in the research project."
+        ]
+      },
+      "card68": {
+        "word": "find",
+        "meaning": "phát hiện, tìm ra, nhận thấy",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Please find enclosed a complimentary ticket.",
+          "Find a way to do...",
+          "Find it helpful to do..."
+        ]
+      },
+      "card69": {
+        "word": "event",
+        "meaning": "trường hợp, sự kiện, cuộc thi",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Prior to the event.",
+          "In the event that + clause.",
+          "The event begins at + time."
+        ]
+      },
+      "card70": {
+        "word": "successful",
+        "meaning": "thành công, thắng lợi, thành đạt",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Highly successful.",
+          "Write successful business proposals.",
+          "A successful candidate."
+        ]
+      },
+      "card71": {
+        "word": "notice",
+        "meaning": "thông báo",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Give 30 days' notice.",
+          "Until further notice.",
+          "Written notice."
+        ]
+      },
+      "card72": {
+        "word": "additional",
+        "meaning": "tính bổ sung, thêm vào, phụ vào",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "If you need additional information.",
+          "Take the following additional steps.",
+          "Be charged an additional fee for..."
+        ]
+      },
+      "card73": {
+        "word": "form",
+        "meaning": "hình thái, mẫu, kiểu",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Another form of identification.",
+          "Job application form.",
+          "Fill out a form."
+        ]
+      },
+      "card74": {
+        "word": "develop",
+        "meaning": "phát triển, khai thác",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Develop marketing plans for...",
+          "Develop a good relationship with...",
+          "Develop a new residential area."
+        ]
+      },
+      "card75": {
+        "word": "pleased",
+        "meaning": "vui mừng, thỏa mãn",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be pleased to offer a new service.",
+          "Be very pleased to announce that...",
+          "Be pleased with the response."
+        ]
+      },
+      "card76": {
+        "word": "except",
+        "meaning": "ngoại trừ",
+        "partOfSpeech": "preposition",
+        "examples": [
+          "All forms of payment except credit cards.",
+          "All expenses except accommodations.",
+          "Except for..."
+        ]
+      },
+      "card77": {
+        "word": "instead",
+        "meaning": "thay vì, thay cho",
+        "partOfSpeech": "preposition",
+        "examples": [
+          "Choose instead to focus on...",
+          "Take place next Monday instead of this Friday.",
+          "Wait for e-mail reports instead of visiting branch offices."
+        ]
+      },
+      "card78": {
+        "word": "interest",
+        "meaning": "sự quan tâm, hứng thú",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Express great interest in...",
+          "Show no interest in...",
+          "Thank you for your interest in..."
+        ]
+      },
+      "card79": {
+        "word": "rather",
+        "meaning": "đúng hơn là, phần nào, tương đối",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Rather slow in the second quarter.",
+          "Would rather wait until then.",
+          "Target new markets rather than downsizing."
+        ]
+      },
+      "card80": {
+        "word": "current",
+        "meaning": "hiện tại",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "All expenses for the current year.",
+          "Add new members to the current staff.",
+          "Review the current regulations."
+        ]
+      },
+      "card81": {
+        "word": "base",
+        "meaning": "dựa trên, đặt trụ sở tại",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Based on the reviews of our new product.",
+          "A multinational company based in Syracuse, New York.",
+          "On a regular basis."
+        ]
+      },
+      "card82": {
+        "word": "applicant",
+        "meaning": "người đăng ký, người dự tuyển, ứng viên",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Most applicants possess...",
+          "Qualified applicants.",
+          "Interview applicants for the position."
+        ]
+      },
+      "card83": {
+        "word": "application",
+        "meaning": "đơn đăng ký, đơn xin ứng tuyển, ứng dụng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "An application for a bank loan.",
+          "A completed application.",
+          "Accept application for the position of..."
+        ]
+      },
+      "card84": {
+        "word": "requirement",
+        "meaning": "sự cần thiết, yêu cầu",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The requirements for the opening position.",
+          "A requirement for the position.",
+          "Meet the requirements."
+        ]
+      },
+      "card85": {
+        "word": "enclose",
+        "meaning": "gửi kèm, đính kèm, đóng bao",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Enclose an invoice with the product.",
+          "A gift certificate is enclosed in the package.",
+          "Please sign the enclosed contract."
+        ]
+      },
+      "card86": {
+        "word": "therefore",
+        "meaning": "vì vậy, cho nên, vì thế, vậy nên",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Have more functions, therefore increasing the cost.",
+          "The deadline has been moved forward, and therefore we need more staff.",
+          "You have ordered ten items. Therefore, you are eligible for an extra one for free."
+        ]
+      },
+      "card87": {
+        "word": "throughout",
+        "meaning": "từ đầu đến cuối, suốt, khắp",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Cause traffic delays throughout the downtown area.",
+          "Available in stores throughout the country.",
+          "\"No Pet\" signs are posted throughout the subway."
+        ]
+      },
+      "card88": {
+        "word": "survey",
+        "meaning": "cuộc điều tra, phiếu khảo sát",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Participate in a survey.",
+          "Conduct a survey.",
+          "Complete a customer satisfaction survey."
+        ]
+      },
+      "card89": {
+        "word": "decision",
+        "meaning": "quyết định, năng lực phân quyết",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Make a decision about...",
+          "Reach a decision about...",
+          "Announced one's decision to do..."
+        ]
+      },
+      "card90": {
+        "word": "interested",
+        "meaning": "có hứng thú, quan tâm",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be interested in the sales position.",
+          "Anyone interested in learning about..."
+        ]
+      },
+      "card91": {
+        "word": "then",
+        "meaning": "sau đó, khi ấy, lúc đó",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Complete the online form and then submit it.",
+          "Ms. Logan immediately checked the inventory. She then arranged shipment of the missing item."
+        ]
+      },
+      "card92": {
+        "word": "highly",
+        "meaning": "rất đỗi, vô cùng",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "A highly successful charity event.",
+          "A highly regarded businessman.",
+          "Highly trained employees."
+        ]
+      },
+      "card93": {
+        "word": "near",
+        "meaning": "gần",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "In the near future.",
+          "Be located near the convention center.",
+          "Stay at a nearby hotel."
+        ]
+      },
+      "card94": {
+        "word": "nearly",
+        "meaning": "gần như",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Be nearly complete.",
+          "Nearly impossible.",
+          "Nearly all employees."
+        ]
+      },
+      "card95": {
+        "word": "long",
+        "meaning": "dài, lâu",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Has long been delayed.",
+          "Last long.",
+          "As long as your order is placed by 5 p.m., we will be able to ship your order tomorrow morning."
+        ]
+      },
+      "card96": {
+        "word": "serve",
+        "meaning": "phục vụ, làm việc, cung cấp (thực phẩm)",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be served after 6 P.M. daily.",
+          "Serve as a financial manager.",
+          "To better serve our clients."
+        ]
+      },
+      "card97": {
+        "word": "candidate",
+        "meaning": "ứng viên, người dự tuyển",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Highly qualified candidates.",
+          "A successful candidate."
+        ]
+      },
+      "card98": {
+        "word": "secure",
+        "meaning": "bảo đảm, giữ an toàn",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be secured against...",
+          "Securely store one's belongings."
+        ]
+      },
+      "card99": {
+        "word": "later",
+        "meaning": "sau này, muộn hơn",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Be postponed until later this week.",
+          "Will be announced at a later time."
+        ]
+      },
+      "card100": {
+        "word": "latest",
+        "meaning": "mới nhất, gần đây nhất",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Use the latest technology.",
+          "The latest version of the software."
+        ]
+      },
+      "card101": {
+        "word": "employment",
+        "meaning": "việc làm, sự tuyển dụng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Be looking for employment.",
+          "An inquiry about employment with...",
+          "Our offer of employment with sb."
+        ]
+      },
+      "card102": {
+        "word": "including",
+        "meaning": "bao gồm, kể cả",
+        "partOfSpeech": "preposition",
+        "examples": [
+          "All members including the director.",
+          "Office supplies including pens, staples, and post-it notes.",
+          "Answer all questions within 24 hours, including those posted on our website."
+        ]
+      },
+      "card103": {
+        "word": "completely",
+        "meaning": "hoàn toàn",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Completely free of charge.",
+          "Be filled in completely.",
+          "Design a completely new logo."
+        ]
+      },
+      "card104": {
+        "word": "approval",
+        "meaning": "sự chấp thuận, sự đồng tình",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Be subject to approval by the board of directors.",
+          "Receive approval to hire new employees.",
+          "Require the final approval from the marketing director."
+        ]
+      },
+      "card105": {
+        "word": "accordingly",
+        "meaning": "theo đó, vì vậy",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Be adjusted accordingly.",
+          "Plan the menu accordingly.",
+          "Your application has been approved. Accordingly, $1000 will be deposited into your bank account."
+        ]
+      },
+      "card106": {
+        "word": "manufacturer",
+        "meaning": "nhà sản xuất, hãng sản xuất",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The world's largest manufacturers of power tools.",
+          "Contact the manufacturer directly.",
+          "Manufacture quality health products."
+        ]
+      },
+      "card107": {
+        "word": "productivity",
+        "meaning": "năng suất",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Increase employee productivity.",
+          "See a dramatic increase in employee productivity.",
+          "Improve product quality as well as employee productivity."
+        ]
+      },
+      "card108": {
+        "word": "increasingly",
+        "meaning": "dần dần",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Become increasingly concerned about...",
+          "Became increasingly time-consuming.",
+          "Become an increasingly popular venue for..."
+        ]
+      },
+      "card109": {
+        "word": "basic",
+        "meaning": "cơ sở, nền tảng",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "A basic overview.",
+          "On a first-come, first-served basis.",
+          "On a daily basis."
+        ]
+      },
+      "card110": {
+        "word": "provided",
+        "meaning": "miễn là",
+        "partOfSpeech": "conjunction",
+        "examples": [
+          "Provided that you have the original receipt.",
+          "Provided that it shows no sign of damage.",
+          "Provided that the budget plan is approved."
+        ]
+      },
+      "card111": {
+        "word": "additionally",
+        "meaning": "thêm vào đó, hơn nữa",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "You must show your ticket at the main gate. Additionally, you need to present your identification at the security desk.",
+          "Renew your subscription now and get a 30% discount. Additionally, renewing now gives you the chance to receive 4 free issues."
+        ]
+      },
+      "card112": {
+        "word": "safely",
+        "meaning": "một cách an toàn",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Lose weight safely through exercise.",
+          "Access one's personal information safely.",
+          "Workplace safety."
+        ]
+      },
+      "card113": {
+        "word": "helpful",
+        "meaning": "hữu ích, có ích",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "It is helpful to do...",
+          "Comment on the helpful services.",
+          "Find it helpful to join local business clubs."
+        ]
+      },
+      "card114": {
+        "word": "financially",
+        "meaning": "về mặt tài chính",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Do well financially.",
+          "Financially sound.",
+          "Describe the company's financial conditions."
+        ]
+      },
+      "card115": {
+        "word": "costly",
+        "meaning": "tốn kém",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Protect your equipment from costly damage.",
+          "Costly medicine.",
+          "Costly breakdown."
+        ]
+      },
+      "card116": {
+        "word": "consider",
+        "meaning": "cân nhắc, coi trọng, xem xét",
+        "partOfSpeech": "verb",
+        "examples": [
+          "In order to be considered for the position.",
+          "Consider relocating to London.",
+          "Late applications will not be considered."
+        ]
+      },
+      "card117": {
+        "word": "supply",
+        "meaning": "cung cấp",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Supply all the materials needed for the construction project.",
+          "Supply all new staff with business cards.",
+          "Order office supplies."
+        ]
+      },
+      "card118": {
+        "word": "repair",
+        "meaning": "sửa chữa",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Need to be repaired.",
+          "Information on how to repair the washing machine.",
+          "Contact your nearest repair center."
+        ]
+      },
+      "card119": {
+        "word": "sign",
+        "meaning": "ký tên, ra hiệu",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Customers who sign a 24-month lease.",
+          "Sign an agreement.",
+          "Provide a signature where indicated."
+        ]
+      },
+      "card120": {
+        "word": "delay",
+        "meaning": "trì hoãn, làm chậm trễ",
+        "partOfSpeech": "verb",
+        "examples": [
+          "If your order is significantly delayed.",
+          "Delay the opening until May.",
+          "Apologize for the delay."
+        ]
+      },
+      "card121": {
+        "word": "accept",
+        "meaning": "chấp nhận, đồng ý",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Accept an invitation.",
+          "Accept credit cards.",
+          "Accept applications from thousands of job candidates."
+        ]
+      },
+      "card122": {
+        "word": "change",
+        "meaning": "sự biến hóa, sự thay đổi",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Make some changes to the plan.",
+          "Change the name of our business from KRG Consulting to CID Innovation.",
+          "Tonight's keynote speaker has been changed."
+        ]
+      },
+      "card123": {
+        "word": "feature",
+        "meaning": "mô tả những nét nổi bật, đề cao",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Feature a famous jazz band.",
+          "Feature a panel of market analysts.",
+          "Have more useful features than any other brands."
+        ]
+      },
+      "card124": {
+        "word": "address",
+        "meaning": "giải quyết, xử lý, gửi thẳng (bưu phẩm), diễn thuyết",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Address customer complaints politely.",
+          "Address many issues at the meeting.",
+          "Address a large audience."
+        ]
+      },
+      "card125": {
+        "word": "continue",
+        "meaning": "tiếp tục, tiếp diễn",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Continue enjoying the convenience of online payment.",
+          "If your computer continues to malfunction.",
+          "Will continue for two more weeks."
+        ]
+      },
+      "card126": {
+        "word": "promote",
+        "meaning": "thúc đẩy, thăng chức, xúc tiến, đẩy mạnh",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Promote their ideas to potential customers.",
+          "Janice was promoted to store manager.",
+          "Launch an advertising campaign to promote its new products."
+        ]
+      },
+      "card127": {
+        "word": "result",
+        "meaning": "kết quả",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Result in a higher quality product.",
+          "The results from the latest analysis.",
+          "As a result of an excellent training program."
+        ]
+      },
+      "card128": {
+        "word": "record",
+        "meaning": "kỷ lục",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Update the sales records.",
+          "Keep records of all expenses.",
+          "Recorded one's highest profits this quarter."
+        ]
+      },
+      "card129": {
+        "word": "close",
+        "meaning": "gần (đường sá), gần gũi (quan hệ)",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Have a close relationship for many years.",
+          "Request a transfer to the branch close to one's hometown.",
+          "Be closed for a month."
+        ]
+      },
+      "card130": {
+        "word": "discuss",
+        "meaning": "thảo luận, bàn bạc",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Discuss the suggestions.",
+          "As discussed in our telephone conversation.",
+          "Meet once a week to discuss future projects."
+        ]
+      },
+      "card131": {
+        "word": "note",
+        "meaning": "chú ý, lưu tâm, nói đến, đề cập đến",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Please note that the shipping takes three business days.",
+          "As noted in our service agreement.",
+          "Please note that a department head's signature is required on the form."
+        ]
+      },
+      "card132": {
+        "word": "expand",
+        "meaning": "mở rộng, phát triển",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Expand its delivery service into the northern region of the city.",
+          "Expand beyond the North American markets.",
+          "Expand rapidly."
+        ]
+      },
+      "card133": {
+        "word": "improve",
+        "meaning": "cải thiện, cải tiến, cải tạo, trau dồi",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Improve our customer service.",
+          "Improve productivity.",
+          "Improve communication among youth staff."
+        ]
+      },
+      "card134": {
+        "word": "proposal",
+        "meaning": "đề án, đề xuất, đề nghị, kế hoạch",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The proposal presented by the marketing manager.",
+          "How to write a business proposal.",
+          "Make a proposal."
+        ]
+      },
+      "card135": {
+        "word": "refund",
+        "meaning": "việc hoàn tiền, sự trả lại",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Have all charges refunded.",
+          "For a full refund.",
+          "Do not offer refunds on sale items."
+        ]
+      },
+      "card136": {
+        "word": "charge",
+        "meaning": "chi phí, trách nhiệm",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Have a charge of $100 on one's account.",
+          "For an additional charge.",
+          "In charge of the project."
+        ]
+      },
+      "card137": {
+        "word": "hire",
+        "meaning": "thuê, tuyển dụng",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Hire extra editors to meet the deadline.",
+          "Be hired to lead the sales division.",
+          "Hire two more assistants."
+        ]
+      },
+      "card138": {
+        "word": "propose",
+        "meaning": "đề xuất, đề nghị, đưa ra",
+        "partOfSpeech": "verb",
+        "examples": [
+          "If you have ideas you would like to propose.",
+          "Review the proposed seating chart.",
+          "Approve the proposed changes."
+        ]
+      },
+      "card139": {
+        "word": "facility",
+        "meaning": "cơ sở vật chất, trang thiết bị",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Sign up for a guided tour of the facility.",
+          "Have a recreation center and other facilities.",
+          "The facility houses laboratory equipment."
+        ]
+      },
+      "card140": {
+        "word": "register",
+        "meaning": "đăng ký, ghi vào sổ, vào sổ",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Register for the medical conference.",
+          "Call in advance to register for the guided tour.",
+          "Visit our website and register today."
+        ]
+      },
+      "card141": {
+        "word": "select",
+        "meaning": "lựa chọn, tuyển chọn",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Select candidates for interviews.",
+          "Be selected to receive this year's award.",
+          "Meet to select the company's new vice president."
+        ]
+      },
+      "card142": {
+        "word": "discount",
+        "meaning": "việc giảm giá",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Offer discounts to customers.",
+          "Offer new customers a 20 percent discount.",
+          "Take advantage of discounted prices."
+        ]
+      },
+      "card143": {
+        "word": "detail",
+        "meaning": "thông tin chi tiết, khía cạnh nhỏ",
+        "partOfSpeech": "noun",
+        "examples": [
+          "For more details on the discount program.",
+          "Details of the merger with Belle Cosmetics.",
+          "A report which details the company's performance."
+        ]
+      },
+      "card144": {
+        "word": "division",
+        "meaning": "bộ phận, phòng ban, cục, bộ",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Restructure some of its divisions.",
+          "The marketing division.",
+          "Strengthen relationships between the divisions."
+        ]
+      },
+      "card145": {
+        "word": "payment",
+        "meaning": "sự thanh toán, khoản thanh toán, sự trả công",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Avoid delays in payment.",
+          "Until full payment is received.",
+          "Appreciate the prompt payment of the bill."
+        ]
+      },
+      "card146": {
+        "word": "plant",
+        "meaning": "công trường, thực vật, nhà máy",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Plants that are native to the area.",
+          "A manufacturing plant.",
+          "Plant the trees strategically."
+        ]
+      },
+      "card147": {
+        "word": "opportunity",
+        "meaning": "cơ hội, thời cơ",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Find more about the job opportunity at...",
+          "Have the opportunity to interview sb.",
+          "A career opportunity."
+        ]
+      },
+      "card148": {
+        "word": "procedure",
+        "meaning": "quy trình, thủ tục, trình tự",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Follow the standard procedures.",
+          "Laboratory safety procedures.",
+          "Procedures for submitting vacation requests."
+        ]
+      },
+      "card149": {
+        "word": "effort",
+        "meaning": "nỗ lực, cố gắng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Present Ms. Pearce with an award for her outstanding effort.",
+          "An ongoing effort to do...",
+          "Make an effort to..."
+        ]
+      },
+      "card150": {
+        "word": "instruction",
+        "meaning": "hướng dẫn, chỉ thị, lời chỉ dẫn",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Provide step-by-step installation instructions.",
+          "Read all the instructions contained in the manual.",
+          "Give specific instructions on..."
+        ]
+      },
+      "card151": {
+        "word": "presentation",
+        "meaning": "bài phát biểu, thuyết trình, việc tặng, biểu (quà, giải thưởng)",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Presentation about the new software.",
+          "Give a presentation.",
+          "Prepare a comprehensive presentation on workplace policies."
+        ]
+      },
+      "card152": {
+        "word": "technical",
+        "meaning": "thuộc về kỹ thuật",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Contact Mr. Keys for technical assistance.",
+          "Be delayed due to technical problems.",
+          "Perform highly technical work."
+        ]
+      },
+      "card153": {
+        "word": "present",
+        "meaning": "phát biểu, trình bày, trao tặng (giải thưởng, quà tặng)",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be required to present photo identification.",
+          "Present one's card at the main entrance.",
+          "Present Mr. Smith with an award."
+        ]
+      },
+      "card154": {
+        "word": "access",
+        "meaning": "tiếp cận, sử dụng, truy cập",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Access important overseas markets by...",
+          "Get unlimited access to the database.",
+          "Have access to a number of recreation areas."
+        ]
+      },
+      "card155": {
+        "word": "further",
+        "meaning": "thêm nữa",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Expand its business further by V-ing.",
+          "Until further notice.",
+          "If you have further questions."
+        ]
+      },
+      "card156": {
+        "word": "leave",
+        "meaning": "rời khỏi, bỏ lại, để lại",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Left the handouts on one's desk.",
+          "Before leaving the office.",
+          "Sick leave."
+        ]
+      },
+      "card157": {
+        "word": "limited",
+        "meaning": "giới hạn, hạn chế",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Remain open for a limited time only.",
+          "Be limited to 20 people.",
+          "As seating is limited."
+        ]
+      },
+      "card158": {
+        "word": "main",
+        "meaning": "chủ yếu, chính",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "The main source of inspiration.",
+          "The main theme at the next business forum.",
+          "Mainly due to the increased cost."
+        ]
+      },
+      "card159": {
+        "word": "necessary",
+        "meaning": "cần thiết, thiết yếu",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Take the necessary steps.",
+          "Have all necessary documents ready.",
+          "It is necessary to make a reservation in advance."
+        ]
+      },
+      "card160": {
+        "word": "previous",
+        "meaning": "trước, ưu tiên",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Offer previous guests discounts.",
+          "Ignore the previous message.",
+          "Be recommended by one's previous employer."
+        ]
+      },
+      "card161": {
+        "word": "regarding",
+        "meaning": "về (ai, cái gì), liên quan đến, đối với",
+        "partOfSpeech": "preposition",
+        "examples": [
+          "Have questions regarding the new product.",
+          "Information regarding reimbursement procedures.",
+          "Customer complaints regarding the newly-launched cable channel."
+        ]
+      },
+      "card162": {
+        "word": "resume",
+        "meaning": "tái triển khai, quay lại",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Will resume as soon as possible.",
+          "Will resume one's duties in a week.",
+          "Have an impressive résumé."
+        ]
+      },
+      "card163": {
+        "word": "supervisor",
+        "meaning": "cấp trên, người quản lý, giám sát viên",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Report to the supervisor.",
+          "All employees will meet their supervisors to discuss next year's business plan.",
+          "The department supervisor gave the intern an assignment."
+        ]
+      },
+      "card164": {
+        "word": "popular",
+        "meaning": "phổ biến, được yêu thích",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Make this year's event the most popular ever.",
+          "Popular among young tourists.",
+          "Extremely popular."
+        ]
+      },
+      "card165": {
+        "word": "respond",
+        "meaning": "phản hồi, trả lời, phản ứng, đáp lại",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Respond promptly to...",
+          "Respond to all inquiries regarding the negotiation.",
+          "Respond to all customer complaints about the equipment."
+        ]
+      },
+      "card166": {
+        "word": "already",
+        "meaning": "đã, rồi, trước đây",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "If you have not already done...",
+          "Employees who have already turned in a registration form.",
+          "Have already been implemented."
+        ]
+      },
+      "card167": {
+        "word": "vehicle",
+        "meaning": "phương tiện, phương tiện giao thông",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Be required to register one's vehicle.",
+          "Company-owned vehicles.",
+          "Your vehicle can be parked in our garage for free."
+        ]
+      },
+      "card168": {
+        "word": "advance",
+        "meaning": "sự tiến bộ, phát triển, cải tiến",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Information about scientific advances.",
+          "In advance.",
+          "Require advance registration."
+        ]
+      },
+      "card169": {
+        "word": "welcome",
+        "meaning": "chào mừng, chào đón",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Welcome newcomers to the company.",
+          "Welcome tour groups on Saturdays.",
+          "Be welcome to use the battery chargers."
+        ]
+      },
+      "card170": {
+        "word": "release",
+        "meaning": "phát hành, công khai",
+        "partOfSpeech": "verb",
+        "examples": [
+          "The release of a new book.",
+          "A press release.",
+          "Release one's latest product."
+        ]
+      },
+      "card171": {
+        "word": "direct",
+        "meaning": "trực tiếp, thẳng, lập tức",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "The most direct route to the conference center.",
+          "Direct all questions to the customer service department.",
+          "Under the direction of Dr. Sun."
+        ]
+      },
+      "card172": {
+        "word": "participate",
+        "meaning": "tham gia, tham dự",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Participate in the program.",
+          "The number of participants is limited to 30."
+        ]
+      },
+      "card173": {
+        "word": "prior",
+        "meaning": "trước, ưu tiên",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Proof of prior account ownership.",
+          "Prior to the first meeting.",
+          "24 hours prior to the scheduled event."
+        ]
+      },
+      "card174": {
+        "word": "subscription",
+        "meaning": "đăng ký mua sản phẩm dài hạn (báo/tạp chí định kỳ)",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Subscription to a fashion magazine.",
+          "Purchase a one-year subscription.",
+          "Renew one's magazine subscription."
+        ]
+      },
+      "card175": {
+        "word": "effective",
+        "meaning": "có hiệu quả, có hiệu lực, được tiến hành",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Highly effective measures to reduce costs.",
+          "Become effective starting next month.",
+          "Be recognized for effectively managing projects."
+        ]
+      },
+      "card176": {
+        "word": "attention",
+        "meaning": "sự chú ý, tập trung, quan tâm",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Any issues requiring the supervisor's immediate attention.",
+          "Attention to detail is required in this project.",
+          "Pay attention to..."
+        ]
+      },
+      "card177": {
+        "word": "direction",
+        "meaning": "phương hướng, sự chỉ đạo, hướng dẫn",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Submit all expense reports directly to the accounting manager.",
+          "Contact the personnel manager directly.",
+          "Direction to the office."
+        ]
+      },
+      "card178": {
+        "word": "leading",
+        "meaning": "chủ đạo, dẫn đầu",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Become a leading manufacturer.",
+          "A leading role.",
+          "Maintain our lead over our competitors."
+        ]
+      },
+      "card179": {
+        "word": "excellent",
+        "meaning": "xuất sắc, ưu tú",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Congratulate the sales staff on their excellent performance.",
+          "Lead to excellent result.",
+          "Excellent management skills."
+        ]
+      },
+      "card180": {
+        "word": "growth",
+        "meaning": "sự tăng trưởng, phát triển",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Anticipate a 10% growth this quarter.",
+          "Describe areas of growth during the past year.",
+          "Tremendous growth in tourism."
+        ]
+      },
+      "card181": {
+        "word": "keep",
+        "meaning": "duy trì, tiếp tục, bảo quản",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Keep customers satisfied.",
+          "Keep the document in a secure place.",
+          "Keep up with advances in technology."
+        ]
+      },
+      "card182": {
+        "word": "fee",
+        "meaning": "chi phí, lệ phí",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Charge customers an extra fee.",
+          "The membership fee.",
+          "Reduce its fee by 20 percent."
+        ]
+      },
+      "card183": {
+        "word": "amount",
+        "meaning": "số lượng, lượng tiền",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Generate a significant amount of profits.",
+          "Restrict the amount of sugar we consume.",
+          "The error in the amount charged for..."
+        ]
+      },
+      "card184": {
+        "word": "immediately",
+        "meaning": "tức thì, lập tức",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "In order to activate your membership immediately.",
+          "Immediately after signing the contract.",
+          "Report to the security desk immediately upon arrival."
+        ]
+      },
+      "card185": {
+        "word": "responsibility",
+        "meaning": "sự chịu trách nhiệm, nhiệm vụ",
+        "partOfSpeech": "noun",
+        "examples": [
+          "It is your responsibility to do...",
+          "The details of your new responsibilities.",
+          "One of the major responsibilities is to do..."
+        ]
+      },
+      "card186": {
+        "word": "original",
+        "meaning": "thuộc nguồn gốc, căn nguyên, bản gốc, độc đáo",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "The original document.",
+          "Present the original receipt.",
+          "Create original artworks."
+        ]
+      },
+      "card187": {
+        "word": "convention",
+        "meaning": "đại hội, hội nghị, hiệp định",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The workshops at the recent convention.",
+          "Attend a convention.",
+          "Give a presentation at a convention."
+        ]
+      },
+      "card188": {
+        "word": "easily",
+        "meaning": "một cách dễ dàng, đơn giản",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Can easily enroll online.",
+          "Easily access personal information on the website.",
+          "Easily accessible by bus."
+        ]
+      },
+      "card189": {
+        "word": "maintenance",
+        "meaning": "sự duy trì, giữ gìn, bảo trì, bảo dưỡng",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Provide a professional automotive maintenance service.",
+          "Undergo regular maintenance.",
+          "Renew a contract for maintenance of..."
+        ]
+      },
+      "card190": {
+        "word": "quickly",
+        "meaning": "một cách nhanh chóng",
+        "partOfSpeech": "adverb",
+        "examples": [
+          "Be surprised at how quickly the business has become successful.",
+          "Proceed quickly.",
+          "As quickly as possible."
+        ]
+      },
+      "card191": {
+        "word": "transportation",
+        "meaning": "giao thông, vận tải, sự chuyển chở",
+        "partOfSpeech": "noun",
+        "examples": [
+          "A convenient means of transportation.",
+          "Request transportation from the office to the factory.",
+          "An efficient public transportation system."
+        ]
+      },
+      "card192": {
+        "word": "update",
+        "meaning": "mới nhất",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The updated version of the employee manual.",
+          "Receive one's updated contact information.",
+          "Update the brochures."
+        ]
+      },
+      "card193": {
+        "word": "response",
+        "meaning": "phản ứng, sự hồi âm, trả lời",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Be pleased with the enthusiastic response.",
+          "Response to your presentation.",
+          "In response to complaints from customers."
+        ]
+      },
+      "card194": {
+        "word": "responsible",
+        "meaning": "có trách nhiệm, có đạo đức, chịu trách nhiệm",
+        "partOfSpeech": "adjective",
+        "examples": [
+          "Be responsible for marketing planning.",
+          "Be responsible for managing documents.",
+          "Be responsible for the completion of the hotel renovation."
+        ]
+      },
+      "card195": {
+        "word": "selection",
+        "meaning": "sự lựa chọn, tuyển chọn, phân loại",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Make a selection.",
+          "Offer a wide selection of gift items.",
+          "Carry a large selection of gardening tools."
+        ]
+      },
+      "card196": {
+        "word": "cancel",
+        "meaning": "hủy bỏ",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Cancel the conference due to bad weather.",
+          "Consider it necessary to cancel the event."
+        ]
+      },
+      "card197": {
+        "word": "obligate",
+        "meaning": "bắt buộc",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Be obligated to attend the meeting.",
+          "Feel obligated to complete the task by the deadline."
+        ]
+      },
+      "card198": {
+        "word": "benefit",
+        "meaning": "lợi ích, sự hỗ trợ",
+        "partOfSpeech": "noun",
+        "examples": [
+          "The benefit of the new policy is increased productivity.",
+          "Employees receive health benefits."
+        ]
+      },
+      "card199": {
+        "word": "improve",
+        "meaning": "cải thiện, cải tiến",
+        "partOfSpeech": "verb",
+        "examples": [
+          "Improve our customer service.",
+          "Improve productivity.",
+          "Improve overall production."
+        ]
+      },
+      "card200": {
+        "word": "strategy",
+        "meaning": "chiến lược",
+        "partOfSpeech": "noun",
+        "examples": [
+          "Develop a new marketing strategy.",
+          "The company's strategy led to increased sales."
+        ]
+      }
+    }
+  }
+}
