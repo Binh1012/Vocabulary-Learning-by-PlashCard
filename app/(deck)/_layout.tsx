@@ -28,6 +28,7 @@ export default function Layout() {
           name="(subset)/flashCard"
           options={{ headerShown: false }}
         />
+        {/*<Stack.Screen name="(quiz)/quizCard" options={{ headerShown: false }} />*/}
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

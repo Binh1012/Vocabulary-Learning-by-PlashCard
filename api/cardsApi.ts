@@ -25,10 +25,8 @@ export const addCardToDeck = async (
 
   await set(cardRef, cardData);
 
-  // Encode deckId để tránh ký tự đặc biệt không hợp lệ
   const safeDeckId = encodeURIComponent(deckId);
 
-  // Gắn cardId vào decks/<deckId>/cardIds
   await update(ref(database, `decks/${safeDeckId}/cardIds`), {
     [cardId]: true,
   });
@@ -37,9 +35,14 @@ export const addCardToDeck = async (
   const deckRef = ref(database, `decks/${safeDeckId}`);
   const deckSnap = await get(deckRef);
   const currentCount = deckSnap.val()?.cardCount || 0;
+  const newCount = currentCount + 1;
+
+  // Tính subsetCount = ceil(cardCount / 30)
+  const newSubsetCount = Math.ceil(newCount / 30);
 
   await update(deckRef, {
-    cardCount: currentCount + 1,
+    cardCount: newCount,
+    subsetCount: newSubsetCount, // bổ sung cập nhật subsetCount
   });
 
   return cardId;
@@ -62,16 +65,16 @@ export const fetchCardsByDeckId = async (deckId: string) => {
   return cards.filter(Boolean);
 };
 
-export const fetchCardsByDeck = async (deckId: string) => {
-  const snapshot = await get(ref(database, "cards"));
-  if (!snapshot.exists()) return [];
-
-  const allCards = snapshot.val();
-
-  return (Object.entries(allCards) as [string, any][])
-    .filter(([id, card]) => card.deckId === deckId)
-    .map(([id, card]) => ({ id, ...card }));
-};
+// export const fetchCardsByDeck = async (deckId: string) => {
+//   const snapshot = await get(ref(database, "cards"));
+//   if (!snapshot.exists()) return [];
+//
+//   const allCards = snapshot.val();
+//
+//   return (Object.entries(allCards) as [string, any][])
+//     .filter(([id, card]) => card.deckId === deckId)
+//     .map(([id, card]) => ({ id, ...card }));
+// };
 
 export const updateCard = async (
   cardId: string,
@@ -99,8 +102,13 @@ export const deleteCard = async (deckId: string, cardId: string) => {
   const deckRef = ref(database, `decks/${safeDeckId}`);
   const deckSnap = await get(deckRef);
   const currentCount = deckSnap.val()?.cardCount || 0;
+  const newCount = Math.max(currentCount - 1, 0);
+
+  // Tính subsetCount = ceil(cardCount / 30)
+  const newSubsetCount = Math.ceil(newCount / 30);
 
   await update(deckRef, {
-    cardCount: Math.max(currentCount - 1, 0),
+    cardCount: newCount,
+    subsetCount: newSubsetCount, // bổ sung cập nhật subsetCount
   });
 };

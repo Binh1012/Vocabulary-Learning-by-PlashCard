@@ -8,6 +8,7 @@ import {
   Image,
   ActivityIndicator,
   Platform,
+  TextInput,
 } from "react-native";
 import { useState, useCallback } from "react";
 import { fetchDecksByUser, deleteDeck } from "@/api/decksApi";
@@ -35,6 +36,7 @@ export default function DecksScreen() {
   const { user, isLoading } = useAuth();
   const [decks, setDecks] = useState<Deck[]>([]);
   const [loadingDecks, setLoadingDecks] = useState(true);
+  const [searchText, setSearchText] = useState("");
 
   const loadDecks = useCallback(async () => {
     if (!user) return;
@@ -82,14 +84,12 @@ export default function DecksScreen() {
 
     if (visual.type === "image") {
       const imageObj = DECK_IMAGES.find((img) => img.key === visual.key);
-      if (!imageObj) return {}; // Trả về mặc định nếu không tìm thấy imageObj
+      if (!imageObj) return {};
 
       if (Platform.OS === "web") {
-        // Trên web, trả về URI trực tiếp hoặc xử lý khác
-        return { uri: imageObj.source.uri || imageObj.source }; // Giả sử source là URI hoặc object
+        return { uri: imageObj.source.uri || imageObj.source };
       }
 
-      // Trên native, sử dụng resolveAssetSource
       return {
         uri: Image.resolveAssetSource(imageObj.source).uri,
       };
@@ -127,8 +127,7 @@ export default function DecksScreen() {
             <Text style={styles.deckTitle}>{item.title}</Text>
             <Text style={styles.deckSubtitle}>{item.description}</Text>
             <Text style={styles.deckMeta}>
-              📄 {item.cardCount || 0} Cards 「 📂 {item.subsetCount || 0}{" "}
-              Subsets
+              📄 {item.cardCount || 0} Cards 「 📂 {item.subsetCount || 0} Sets
             </Text>
           </View>
         </TouchableOpacity>
@@ -142,12 +141,10 @@ export default function DecksScreen() {
     );
   };
 
-  const getCurrentDayIndex = () => {
-    const now = new Date();
-    return now.getDay() === 0 ? 6 : now.getDay() - 1; // 0: Sunday => 6
-  };
-
-  const days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+  // Lọc decks theo searchText
+  const filteredDecks = decks.filter((deck) =>
+    deck.title.toLowerCase().includes(searchText.toLowerCase()),
+  );
 
   if (isLoading || loadingDecks) {
     return (
@@ -162,29 +159,28 @@ export default function DecksScreen() {
           <Text style={styles.headerTitle}>Flashcard Vocabulary</Text>
         </View>
 
-        <View style={styles.calendar}>
-          {days.map((day, index) => (
-            <View key={day} style={styles.calendarDay}>
-              <Text style={styles.calendarDayText}>{day}</Text>
-              <Text
-                style={[
-                  styles.calendarDate,
-                  index === getCurrentDayIndex() && styles.currentDate,
-                ]}
-              >
-                {index + 1}
-              </Text>
-            </View>
-          ))}
+        {/* Thanh tìm kiếm */}
+        <View style={styles.searchContainer}>
+          <TextInput
+            placeholder="Tìm kiếm bộ từ..."
+            value={searchText}
+            onChangeText={setSearchText}
+            style={styles.searchInput}
+            clearButtonMode="while-editing"
+          />
         </View>
 
         <FlatList
-          data={decks}
+          data={filteredDecks}
           keyExtractor={(item) => item.id}
           renderItem={renderDeckItem}
           contentContainerStyle={styles.listContent}
           ListEmptyComponent={
-            <Text style={styles.emptyText}>No decks found.</Text>
+            <Text style={styles.emptyText}>
+              {searchText
+                ? "Không tìm thấy bộ từ phù hợp."
+                : "Chưa có bộ từ nào."}
+            </Text>
           }
         />
 
@@ -212,26 +208,18 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#fff",
   },
-  calendar: {
-    flexDirection: "row",
-    justifyContent: "space-around",
+  searchContainer: {
+    paddingHorizontal: 16,
     paddingVertical: 10,
     backgroundColor: "#f0f0f0",
   },
-  calendarDay: {
-    alignItems: "center",
-  },
-  calendarDayText: {
-    fontSize: 12,
-    color: "#777",
-  },
-  calendarDate: {
-    fontSize: 16,
-    color: "#777",
-  },
-  currentDate: {
-    color: "#F5A623",
-    fontWeight: "bold",
+  searchInput: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    borderWidth: 1,
+    borderColor: "#ccc",
   },
   listContent: {
     padding: 16,

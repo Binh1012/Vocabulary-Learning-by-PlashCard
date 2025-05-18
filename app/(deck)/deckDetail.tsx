@@ -13,6 +13,7 @@ import { deleteCard, fetchCardsByDeckId } from "@/api/cardsApi";
 import { Tabs } from "react-native-collapsible-tab-view";
 import Toast from "react-native-toast-message";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Ionicons } from "@expo/vector-icons";
 
 interface Deck {
   id: string;
@@ -147,25 +148,42 @@ export default function DeckDetailScreen() {
       <Tabs.Container
         headerContainerStyle={styles.headerContainer}
         renderHeader={() => (
-          <View style={styles.header}>
-            <TouchableOpacity
-              style={styles.backButton}
-              onPress={() => router.back()}
-            >
-              <Text style={styles.backText}>Back</Text>
-            </TouchableOpacity>
-            <View style={styles.deckInfo}>
-              <Image source={{ uri: deck.imageUrl }} style={styles.image} />
-              <View>
-                <Text style={styles.deckTitle}>{deck.title}</Text>
-                <Text style={styles.deckDescription}>{deck.description}</Text>
-                <Text style={styles.deckMeta}>
-                  📄 {cards.length} Cards ｜ 📂{" "}
-                  {deck.subsetCount || cardSets.length} Sets
-                </Text>
+          <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
+            <View style={styles.header}>
+              <TouchableOpacity
+                style={styles.backButton}
+                onPress={() => router.back()}
+                activeOpacity={0.7}
+              >
+                <Ionicons name="arrow-back" size={24} color="#72B3F0" />
+                <Text style={styles.backText}>Back</Text>
+              </TouchableOpacity>
+
+              <View style={styles.deckInfo}>
+                <Image source={{ uri: deck.imageUrl }} style={styles.image} />
+                <View style={styles.deckTextWrapper}>
+                  <Text
+                    style={styles.deckTitle}
+                    numberOfLines={1}
+                    ellipsizeMode="tail"
+                  >
+                    {deck.title}
+                  </Text>
+                  <Text
+                    style={styles.deckDescription}
+                    numberOfLines={2}
+                    ellipsizeMode="tail"
+                  >
+                    {deck.description}
+                  </Text>
+                  <Text style={styles.deckMeta}>
+                    📄 {cards.length} Cards ｜ 📂{" "}
+                    {deck.subsetCount || cardSets.length} Sets
+                  </Text>
+                </View>
               </View>
             </View>
-          </View>
+          </SafeAreaView>
         )}
       >
         <Tabs.Tab name="Sets" label="Sets">
@@ -212,14 +230,56 @@ export default function DeckDetailScreen() {
 
 const styles = StyleSheet.create({
   headerContainer: { backgroundColor: "#fff" },
-  header: { padding: 16, backgroundColor: "#fff" },
-  backButton: { marginBottom: 10 },
-  backText: { color: "#72B3F0", fontSize: 16 },
-  deckInfo: { flexDirection: "row", gap: 10 },
-  image: { width: 60, height: 60, borderRadius: 8 },
-  deckTitle: { fontSize: 20, fontWeight: "bold" },
-  deckDescription: { color: "#666" },
-  deckMeta: { marginTop: 4, fontSize: 14, color: "#999" },
+  header: {
+    padding: 16,
+    backgroundColor: "#fff",
+  },
+  backButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 10,
+    gap: 6,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: 6,
+    backgroundColor: "#e6f0ff",
+    alignSelf: "flex-start",
+  },
+  backText: {
+    color: "#72B3F0",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  deckInfo: {
+    flexDirection: "row",
+    gap: 12,
+    alignItems: "center",
+  },
+  image: {
+    width: 60,
+    height: 60,
+    borderRadius: 8,
+    backgroundColor: "#ccc",
+  },
+  deckTextWrapper: {
+    flex: 1,
+  },
+  deckTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#222",
+    flexShrink: 1,
+  },
+  deckDescription: {
+    color: "#666",
+    marginTop: 4,
+    flexShrink: 1,
+  },
+  deckMeta: {
+    marginTop: 6,
+    fontSize: 14,
+    color: "#999",
+  },
 
   cardBox: {
     backgroundColor: "#fff",
